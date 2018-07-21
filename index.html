@@ -1,0 +1,131 @@
+<html>
+<head>
+    <title>CGPA calculation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="icon" href="img/cgpa.png" type="image/png">
+    
+    <link rel="stylesheet" href="aos.css" type="text/css">
+    <script src="aos.js"    ></script>
+    
+    
+    
+    
+    
+    <meta name="description" content="Calculate CGPA">
+    <meta name="author" content="Santhosh">
+    <meta property="og:image" content="https://github.com/santhoshkumarvgds/CGPA-3/blob/master/cgpa.png?raw=true">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="620">
+
+
+
+</head>
+<body>
+
+    <div class="container">
+            <div data-aos="flip-left"
+     data-aos-duration="1000" >
+        <img src="img/collegeLogo.png" width="85px;">
+        <h4 >K.S.R. College of Engineering</h4>
+        <h3  id="color">CGPA-Calculation <span>III -Sem</span></h3>
+        <div data-aos="fade-left" data-aos-offset="500" data-aos-duration="500" data-aos-delay="600">
+        <sa >- Santhoshkumarvgds</sa>
+                </div>
+        </div>
+        <h3 id="name"></h3>
+        <div id="sa">
+            
+        <form>
+            
+            <div data-aos="zoom-in"><input id="nct" type="text" placeholder="NCT" ><br></div>
+            <div data-aos="zoom-in"><input id="mm" type="text" placeholder="MM" ></div>
+            <div data-aos="zoom-in"><input id="ds" type="text" placeholder="DS" ></div>
+            <div data-aos="zoom-in"><input id="se" type="text" placeholder="SE" ></div>
+            <div data-aos="zoom-in"><input id="ca" type="text" placeholder="CA" ></div>
+            <div data-aos="zoom-in"><input id="oops" type="text" placeholder="OOPS" ></div>
+            <div data-aos="zoom-in"><input id="mmlab" type="text" placeholder="MM LAB" ></div>
+            <div data-aos="zoom-in"><input id="dslab" type="text" placeholder="DS LAB" ></div>
+            <div data-aos="zoom-in"><input id="oopslab" type="text" placeholder="OOPS LAB" ></div><br><br>
+        </form>
+           
+        <in onclick="ans()">Submit <i class="fa fa-share-square"></i></in><br><br>
+        </div>
+
+    </div>
+
+    <script>
+      AOS.init();
+    </script>
+    <script type="text/javascript" src="smoth.js"></script>
+    <script>
+    (function(){
+   var link,
+      toggleScrollToTopLink = function(){
+
+        if($("body").scrollTop() > 0 || $("html").scrollTop() > 0){
+          link.fadeIn(7000000000000);
+        }
+        else{
+          link.fadeOut(700000000000);
+        }
+      };
+
+      $(document).ready(function(){
+
+        link = $(".scrltp");
+        $(window).scroll(toggleScrollToTopLink);
+        toggleScrollToTopLink();
+      });
+
+})();
+
+
+    
+    </script>
+</body>
+ <script>
+        var name=prompt("Enter your name");
+        while(name===""){
+            name=prompt("Enter your name");
+        }
+        document.getElementById("name").innerHTML="Hi "+name+"....!!!";
+    </script>
+
+    <!--<script>
+        var sub_arr = [];
+            var sub_arr=document.getElementById("nct").value;
+        function ans(){
+           //var sub_arr = [];
+            var sub_arr=document.getElementById("nct").value;
+            /*var a[1]=document.getElementById("mm").value;
+            var a[2]=document.getElementById("ds").value;
+            var a[3]=document.getElementById("se").value;
+            var a[4]=document.getElementById("ca").value;
+            var a[5]=document.getElementById("oops").value;
+            var a[6]=document.getElementById("mmlab").value;
+            var a[7]=document.getElementById("oopslab").value;
+            var a[8]=document.getElementById("dslab").value;
+            for(i=0;i<9;i++){
+                switch(a[i]){
+                    case 'O': a[i]=10;
+                            break;
+                    case 'A+': a[i]=9;
+                            break;
+                    case 'A': a[i]=8;
+                            break;
+                    case 'B+': a[i]=7;
+                            break;
+                    case 'B': a[i]=6;
+                            break;
+                }
+            }*/
+            document.getElementById("name").innerHTML=sub_arr;
+        }
+    
+    </script>-->
+</html>
